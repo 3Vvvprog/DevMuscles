@@ -28,6 +28,9 @@
 		3B282B4A2B77C3400012CE8F /* RxAlamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3B282B492B77C3400012CE8F /* RxAlamofire */; };
 		3B7390E92B77C82100C5EF9D /* ProximaNova-Extrabld.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B7390E82B77C82100C5EF9D /* ProximaNova-Extrabld.ttf */; };
 		3B7390EB2B77C90300C5EF9D /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7390EA2B77C90300C5EF9D /* AppColors.swift */; };
+		3B7390F12B77CB4E00C5EF9D /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7390EE2B77CB4E00C5EF9D /* OnboardingCoordinator.swift */; };
+		3B7390F22B77CB4E00C5EF9D /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7390EF2B77CB4E00C5EF9D /* AppCoordinator.swift */; };
+		3B7390F32B77CB4E00C5EF9D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7390F02B77CB4E00C5EF9D /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +54,9 @@
 		3B282B402B77C0B70012CE8F /* UIFont+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extention.swift"; sourceTree = "<group>"; };
 		3B7390E82B77C82100C5EF9D /* ProximaNova-Extrabld.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Extrabld.ttf"; sourceTree = "<group>"; };
 		3B7390EA2B77C90300C5EF9D /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		3B7390EE2B77CB4E00C5EF9D /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
+		3B7390EF2B77CB4E00C5EF9D /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		3B7390F02B77CB4E00C5EF9D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,7 @@
 		3B282B102B77B5F40012CE8F /* DevMuscles */ = {
 			isa = PBXGroup;
 			children = (
+				3B7390EC2B77CB2100C5EF9D /* NavigationLayer */,
 				3B282B262B77B6E40012CE8F /* Application */,
 				3B282B152B77B5F40012CE8F /* ViewController.swift */,
 				3B282B252B77B6B70012CE8F /* Resources */,
@@ -163,6 +170,24 @@
 				3B282B402B77C0B70012CE8F /* UIFont+Extention.swift */,
 			);
 			path = Extentions;
+			sourceTree = "<group>";
+		};
+		3B7390EC2B77CB2100C5EF9D /* NavigationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				3B7390ED2B77CB2C00C5EF9D /* Coordinators */,
+			);
+			path = NavigationLayer;
+			sourceTree = "<group>";
+		};
+		3B7390ED2B77CB2C00C5EF9D /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				3B7390F02B77CB4E00C5EF9D /* Coordinator.swift */,
+				3B7390EF2B77CB4E00C5EF9D /* AppCoordinator.swift */,
+				3B7390EE2B77CB4E00C5EF9D /* OnboardingCoordinator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +283,12 @@
 				3B282B162B77B5F40012CE8F /* ViewController.swift in Sources */,
 				3B282B122B77B5F40012CE8F /* AppDelegate.swift in Sources */,
 				3B282B192B77B5F40012CE8F /* DevMuscles.xcdatamodeld in Sources */,
+				3B7390F12B77CB4E00C5EF9D /* OnboardingCoordinator.swift in Sources */,
+				3B7390F22B77CB4E00C5EF9D /* AppCoordinator.swift in Sources */,
 				3B7390EB2B77C90300C5EF9D /* AppColors.swift in Sources */,
 				3B282B412B77C0B70012CE8F /* UIFont+Extention.swift in Sources */,
 				3B282B142B77B5F40012CE8F /* SceneDelegate.swift in Sources */,
+				3B7390F32B77CB4E00C5EF9D /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
