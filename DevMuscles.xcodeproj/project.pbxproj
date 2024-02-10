@@ -27,6 +27,7 @@
 		3B282B472B77C3290012CE8F /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = 3B282B462B77C3290012CE8F /* RxDataSources */; };
 		3B282B4A2B77C3400012CE8F /* RxAlamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3B282B492B77C3400012CE8F /* RxAlamofire */; };
 		3B7390E92B77C82100C5EF9D /* ProximaNova-Extrabld.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B7390E82B77C82100C5EF9D /* ProximaNova-Extrabld.ttf */; };
+		3B7390EB2B77C90300C5EF9D /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7390EA2B77C90300C5EF9D /* AppColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		3B282B342B77BF510012CE8F /* Satoshi-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Medium.ttf"; sourceTree = "<group>"; };
 		3B282B402B77C0B70012CE8F /* UIFont+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extention.swift"; sourceTree = "<group>"; };
 		3B7390E82B77C82100C5EF9D /* ProximaNova-Extrabld.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Extrabld.ttf"; sourceTree = "<group>"; };
+		3B7390EA2B77C90300C5EF9D /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				3B282B1C2B77B5F50012CE8F /* LaunchScreen.storyboard */,
 				3B282B1F2B77B5F50012CE8F /* Info.plist */,
 				3B282B172B77B5F40012CE8F /* DevMuscles.xcdatamodeld */,
+				3B7390EA2B77C90300C5EF9D /* AppColors.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				3B282B162B77B5F40012CE8F /* ViewController.swift in Sources */,
 				3B282B122B77B5F40012CE8F /* AppDelegate.swift in Sources */,
 				3B282B192B77B5F40012CE8F /* DevMuscles.xcdatamodeld in Sources */,
+				3B7390EB2B77C90300C5EF9D /* AppColors.swift in Sources */,
 				3B282B412B77C0B70012CE8F /* UIFont+Extention.swift in Sources */,
 				3B282B142B77B5F40012CE8F /* SceneDelegate.swift in Sources */,
 			);
