@@ -31,6 +31,9 @@
 		3B7390F12B77CB4E00C5EF9D /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7390EE2B77CB4E00C5EF9D /* OnboardingCoordinator.swift */; };
 		3B7390F22B77CB4E00C5EF9D /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7390EF2B77CB4E00C5EF9D /* AppCoordinator.swift */; };
 		3B7390F32B77CB4E00C5EF9D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7390F02B77CB4E00C5EF9D /* Coordinator.swift */; };
+		3B7390FD2B77D0B900C5EF9D /* OnboardingViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7390FC2B77D0B900C5EF9D /* OnboardingViewPresenter.swift */; };
+		3B7390FF2B77D0DE00C5EF9D /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7390FE2B77D0DE00C5EF9D /* OnboardingViewController.swift */; };
+		3B7391012B77D14500C5EF9D /* OnboardingPartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7391002B77D14500C5EF9D /* OnboardingPartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +60,9 @@
 		3B7390EE2B77CB4E00C5EF9D /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
 		3B7390EF2B77CB4E00C5EF9D /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		3B7390F02B77CB4E00C5EF9D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		3B7390FC2B77D0B900C5EF9D /* OnboardingViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewPresenter.swift; sourceTree = "<group>"; };
+		3B7390FE2B77D0DE00C5EF9D /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		3B7391002B77D14500C5EF9D /* OnboardingPartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,7 @@
 		3B282B102B77B5F40012CE8F /* DevMuscles */ = {
 			isa = PBXGroup;
 			children = (
+				3B7390FA2B77D0A200C5EF9D /* Modules */,
 				3B7390EC2B77CB2100C5EF9D /* NavigationLayer */,
 				3B282B262B77B6E40012CE8F /* Application */,
 				3B282B152B77B5F40012CE8F /* ViewController.swift */,
@@ -190,6 +197,24 @@
 			path = Coordinators;
 			sourceTree = "<group>";
 		};
+		3B7390FA2B77D0A200C5EF9D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				3B7390FB2B77D0AA00C5EF9D /* Onboarding */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		3B7390FB2B77D0AA00C5EF9D /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				3B7390FC2B77D0B900C5EF9D /* OnboardingViewPresenter.swift */,
+				3B7390FE2B77D0DE00C5EF9D /* OnboardingViewController.swift */,
+				3B7391002B77D14500C5EF9D /* OnboardingPartViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -282,12 +307,15 @@
 			files = (
 				3B282B162B77B5F40012CE8F /* ViewController.swift in Sources */,
 				3B282B122B77B5F40012CE8F /* AppDelegate.swift in Sources */,
+				3B7390FD2B77D0B900C5EF9D /* OnboardingViewPresenter.swift in Sources */,
 				3B282B192B77B5F40012CE8F /* DevMuscles.xcdatamodeld in Sources */,
 				3B7390F12B77CB4E00C5EF9D /* OnboardingCoordinator.swift in Sources */,
 				3B7390F22B77CB4E00C5EF9D /* AppCoordinator.swift in Sources */,
+				3B7391012B77D14500C5EF9D /* OnboardingPartViewController.swift in Sources */,
 				3B7390EB2B77C90300C5EF9D /* AppColors.swift in Sources */,
 				3B282B412B77C0B70012CE8F /* UIFont+Extention.swift in Sources */,
 				3B282B142B77B5F40012CE8F /* SceneDelegate.swift in Sources */,
+				3B7390FF2B77D0DE00C5EF9D /* OnboardingViewController.swift in Sources */,
 				3B7390F32B77CB4E00C5EF9D /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
