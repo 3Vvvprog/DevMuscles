@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         label.text = "Main Label"
         label.textColor = .black
         
-        
+        label.font = .ProximaNova.extraBold.size(of: 40)
         
         
         label.snp.makeConstraints { make in
