@@ -21,11 +21,11 @@
 	</dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>ProximaNova-Extrabld.ttf</string>
+		<string>ProximaNova-Bold.ttf</string>
 		<string>IntegralCF-Bold.ttf</string>
 		<string>IntegralCF-Regular.ttf</string>
 		<string>IntegralCF-ExtraBold.ttf</string>
-		<string>ProximaNova-Bold.ttf</string>
-		<string>ProximaNova-Extrabld.ttf</string>
 		<string>Satoshi-Bold.ttf</string>
 		<string>Satoshi-Medium.ttf</string>
 	</array>
