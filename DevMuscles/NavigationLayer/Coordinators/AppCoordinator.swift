@@ -9,6 +9,9 @@
 import UIKit
 
 class AppCoordinator: Coordinator {
+    
+    private let factory = SceneFactory.self
+    
     override func start() {
         showOnboardingFlow()
     }
@@ -22,9 +25,7 @@ class AppCoordinator: Coordinator {
 private extension AppCoordinator {
     func showOnboardingFlow() {
         guard let navigationController = navigationController else { return }
-        let onboardingCoordinator = OnboardingCoordinator(type: .onboarding, navigationController: navigationController, finishDelegate: self)
-        addChildCoordinator(onboardingCoordinator)
-        onboardingCoordinator.start()
+        factory.makeOnboardingFlow(coordinator: self, navigationController: navigationController, finishDelegate: self)
     }
     
     func showMainFlow() {
