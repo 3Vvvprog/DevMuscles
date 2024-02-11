@@ -53,6 +53,7 @@ class OnboardingViewController: UIViewController {
         setActivePage(page: 0)
         pages[0].button.isHidden = true
         pages[1].button.isHidden = true
+        pages[2].button.addTarget(self, action: #selector(didButtonPressed), for: .touchUpInside)
     }
     
     
@@ -174,6 +175,10 @@ private extension OnboardingViewController {
     // MARK: - Constraints
     func makeConstraints() {
         
+    }
+    
+    @objc func didButtonPressed() {
+        viewOutput.onboardingFinish()
     }
 }
 

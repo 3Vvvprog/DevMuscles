@@ -31,6 +31,11 @@ private extension AppCoordinator {
     func showMainFlow() {
         
     }
+    
+    func showLoginFlow() {
+        guard let navigationController = navigationController else { return }
+        factory.makeLogInFlow(coordinator: self, navigationController: navigationController, finishDelegate: self)
+    }
 }
 
 extension AppCoordinator: CoordinatorFinishDelegate {
@@ -38,6 +43,9 @@ extension AppCoordinator: CoordinatorFinishDelegate {
         removeChildCoordinator(childCoordinator)
         
         switch childCoordinator.type {
+        case .onboarding:
+            navigationController?.viewControllers.removeAll()
+            showLoginFlow()
         case .app:
             return
         default:

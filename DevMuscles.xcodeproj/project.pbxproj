@@ -35,6 +35,10 @@
 		3B7390FF2B77D0DE00C5EF9D /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7390FE2B77D0DE00C5EF9D /* OnboardingViewController.swift */; };
 		3B7391012B77D14500C5EF9D /* OnboardingPartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7391002B77D14500C5EF9D /* OnboardingPartViewController.swift */; };
 		3B7391092B78F32B00C5EF9D /* SceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7391082B78F32B00C5EF9D /* SceneFactory.swift */; };
+		3BD8584C2B78FB8B00759F02 /* LogInCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD858482B78FB8B00759F02 /* LogInCoordinator.swift */; };
+		3BD8584D2B78FB8B00759F02 /* LogInViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD858492B78FB8B00759F02 /* LogInViewPresenter.swift */; };
+		3BD8584E2B78FB8B00759F02 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD8584A2B78FB8B00759F02 /* LogInViewController.swift */; };
+		3BD8584F2B78FB8B00759F02 /* LogInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD8584B2B78FB8B00759F02 /* LogInViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +69,10 @@
 		3B7390FE2B77D0DE00C5EF9D /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		3B7391002B77D14500C5EF9D /* OnboardingPartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPartViewController.swift; sourceTree = "<group>"; };
 		3B7391082B78F32B00C5EF9D /* SceneFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneFactory.swift; sourceTree = "<group>"; };
+		3BD858482B78FB8B00759F02 /* LogInCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInCoordinator.swift; sourceTree = "<group>"; };
+		3BD858492B78FB8B00759F02 /* LogInViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewPresenter.swift; sourceTree = "<group>"; };
+		3BD8584A2B78FB8B00759F02 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		3BD8584B2B78FB8B00759F02 /* LogInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +204,7 @@
 				3B7390F02B77CB4E00C5EF9D /* Coordinator.swift */,
 				3B7390EF2B77CB4E00C5EF9D /* AppCoordinator.swift */,
 				3B7390EE2B77CB4E00C5EF9D /* OnboardingCoordinator.swift */,
+				3BD858482B78FB8B00759F02 /* LogInCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -203,7 +212,7 @@
 		3B7390FA2B77D0A200C5EF9D /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				3B7391022B7805DE00C5EF9D /* LoginSignUpAccount */,
+				3B7391022B7805DE00C5EF9D /* LogIn */,
 				3B7390FB2B77D0AA00C5EF9D /* Onboarding */,
 			);
 			path = Modules;
@@ -219,11 +228,14 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
-		3B7391022B7805DE00C5EF9D /* LoginSignUpAccount */ = {
+		3B7391022B7805DE00C5EF9D /* LogIn */ = {
 			isa = PBXGroup;
 			children = (
+				3BD858492B78FB8B00759F02 /* LogInViewPresenter.swift */,
+				3BD8584A2B78FB8B00759F02 /* LogInViewController.swift */,
+				3BD8584B2B78FB8B00759F02 /* LogInViewModel.swift */,
 			);
-			path = LoginSignUpAccount;
+			path = LogIn;
 			sourceTree = "<group>";
 		};
 		3B7391072B78F31000C5EF9D /* SceneFactory */ = {
@@ -324,7 +336,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BD8584C2B78FB8B00759F02 /* LogInCoordinator.swift in Sources */,
 				3B282B162B77B5F40012CE8F /* ViewController.swift in Sources */,
+				3BD8584D2B78FB8B00759F02 /* LogInViewPresenter.swift in Sources */,
 				3B282B122B77B5F40012CE8F /* AppDelegate.swift in Sources */,
 				3B7390FD2B77D0B900C5EF9D /* OnboardingViewPresenter.swift in Sources */,
 				3B282B192B77B5F40012CE8F /* DevMuscles.xcdatamodeld in Sources */,
@@ -334,9 +348,11 @@
 				3B7391012B77D14500C5EF9D /* OnboardingPartViewController.swift in Sources */,
 				3B7390EB2B77C90300C5EF9D /* AppColors.swift in Sources */,
 				3B282B412B77C0B70012CE8F /* UIFont+Extention.swift in Sources */,
+				3BD8584E2B78FB8B00759F02 /* LogInViewController.swift in Sources */,
 				3B282B142B77B5F40012CE8F /* SceneDelegate.swift in Sources */,
 				3B7390FF2B77D0DE00C5EF9D /* OnboardingViewController.swift in Sources */,
 				3B7390F32B77CB4E00C5EF9D /* Coordinator.swift in Sources */,
+				3BD8584F2B78FB8B00759F02 /* LogInViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

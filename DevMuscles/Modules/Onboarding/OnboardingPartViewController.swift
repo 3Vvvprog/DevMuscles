@@ -11,6 +11,7 @@ import SnapKit
 class OnboardingPartViewController: UIViewController {
 //    private var disposeBag = DisposeBag()
     
+    
     // MARK: - Private properties
     var imageToShow: UIImage? {
         didSet {
@@ -75,6 +76,7 @@ private extension OnboardingPartViewController {
         button.setTitle("Start Now", for: .normal)
         button.setTitleColor(AppColors.blask, for: .normal)
         button.titleLabel?.font = .Integral.regular.size(of: 17)
+        
     }
     
     
@@ -102,4 +104,6 @@ private extension OnboardingPartViewController {
             make.width.equalTo(185)
         }
     }
+    
+    
 }

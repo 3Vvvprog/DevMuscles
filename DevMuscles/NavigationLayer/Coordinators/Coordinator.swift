@@ -10,9 +10,8 @@ import UIKit
 
 enum CoordinatorType {
     case onboarding, app, home, order, list, profile
-    enum UserAccount {
-        case logIn, sugnUp, verification, forgotPassword
-    }
+    case logIn, sugnUp, verification, forgotPassword
+    
 }
 
 protocol CoordinatorProtocol: AnyObject {

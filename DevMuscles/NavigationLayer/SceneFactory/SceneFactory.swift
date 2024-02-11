@@ -33,9 +33,26 @@ struct SceneFactory {
         return viewController
     }
     
+    
+    // MARK: - OnboardingFlow
     static func makeOnboardingFlow(coordinator: AppCoordinator, navigationController: UINavigationController, finishDelegate: CoordinatorFinishDelegate) {
         let onboardingCoordinator = OnboardingCoordinator(type: .onboarding, navigationController: navigationController, finishDelegate: finishDelegate)
         coordinator.addChildCoordinator(onboardingCoordinator)
         onboardingCoordinator.start()
+    }
+    
+    // MARK: - LogInCoordinator
+    static func makeLogInController(coordinator: LogInCoordinator) -> LogInViewController {
+        let presenter = LogInViewPresenter(coordinator: coordinator)
+        let viewModel = LogInViewModel()
+        let viewController = LogInViewController(viewModel: viewModel, viewOutput: presenter)
+        return viewController
+    }
+    
+    // MARK: - LogInFlow
+    static func makeLogInFlow(coordinator: AppCoordinator, navigationController: UINavigationController, finishDelegate: CoordinatorFinishDelegate) {
+        let logInCoordinator = LogInCoordinator(type: .logIn, navigationController: navigationController)
+        coordinator.addChildCoordinator(logInCoordinator)
+        logInCoordinator.start()
     }
 }
