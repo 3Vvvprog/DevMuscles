@@ -35,7 +35,7 @@ class OnboardingViewController: UIViewController {
         initialize()
         setupPageControl()
         makeConstraints()
-        view.backgroundColor = AppColors.accentOrange
+        view.backgroundColor = AppColors.accentGreen
     }
     
     
