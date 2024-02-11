@@ -19,6 +19,7 @@ class OnboardingViewController: UIViewController {
     
     // MARK: - Private Properties
     private var pages = [OnboardingPartViewController]()
+    private var currentPage = 0
     
     
     // MARK: - Private Views
@@ -50,6 +51,8 @@ class OnboardingViewController: UIViewController {
         makeConstraints()
         view.backgroundColor = AppColors.blask
         setActivePage(page: 0)
+        pages[0].button.isHidden = true
+        pages[1].button.isHidden = true
     }
     
     
@@ -135,7 +138,7 @@ private extension OnboardingViewController {
                 make.width.equalTo(16)
             }
             
-            pages[0].button.isHidden = true
+            
         case 1:
             firstPage.backgroundColor = AppColors.gray
             firstPage.snp.updateConstraints { make in
@@ -147,7 +150,6 @@ private extension OnboardingViewController {
             thirdPage.snp.updateConstraints { make in
                 make.width.equalTo(16)
             }
-            pages[1].button.isHidden = true
         case 2:
             firstPage.backgroundColor = AppColors.gray
             firstPage.snp.updateConstraints { make in
@@ -162,7 +164,7 @@ private extension OnboardingViewController {
         default:
             break
         }
-        UIView.animate(withDuration: 0.1) {
+        UIView.animate(withDuration: 0) {
             self.view.layoutIfNeeded()
         }
         
@@ -199,7 +201,13 @@ extension OnboardingViewController: UIPageViewControllerDataSource {
 extension OnboardingViewController: UIPageViewControllerDelegate {
     func pageViewController(_ pageViewController: UIPageViewController, willTransitionTo pendingViewControllers: [UIViewController]) {
         if let index = pages.firstIndex(of: pendingViewControllers.first! as! OnboardingPartViewController) {
-            setActivePage(page: index)
+            currentPage = index
+        }
+    }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        if completed {
+            setActivePage(page: currentPage)
         }
     }
 }
