@@ -8,12 +8,6 @@
 import UIKit
 import SnapKit
 
-private struct PageControl {
-    var FirstPage = UIView()
-    var SecondPage = UIView()
-    var ThirdPage = UIView()
-}
-
 class OnboardingViewController: UIViewController {
 //    private var disposeBag = DisposeBag()
     
