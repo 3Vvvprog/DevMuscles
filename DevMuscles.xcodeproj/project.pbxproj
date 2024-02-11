@@ -200,6 +200,7 @@
 		3B7390FA2B77D0A200C5EF9D /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				3B7391022B7805DE00C5EF9D /* LoginSignUpAccount */,
 				3B7390FB2B77D0AA00C5EF9D /* Onboarding */,
 			);
 			path = Modules;
@@ -213,6 +214,13 @@
 				3B7391002B77D14500C5EF9D /* OnboardingPartViewController.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		3B7391022B7805DE00C5EF9D /* LoginSignUpAccount */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LoginSignUpAccount;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
