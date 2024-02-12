@@ -39,6 +39,7 @@
 		3BD8584D2B78FB8B00759F02 /* LogInViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD858492B78FB8B00759F02 /* LogInViewPresenter.swift */; };
 		3BD8584E2B78FB8B00759F02 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD8584A2B78FB8B00759F02 /* LogInViewController.swift */; };
 		3BD8584F2B78FB8B00759F02 /* LogInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD8584B2B78FB8B00759F02 /* LogInViewModel.swift */; };
+		3BD8586D2B7A3CDE00759F02 /* UserStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD8586C2B7A3CDE00759F02 /* UserStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,7 @@
 		3BD858492B78FB8B00759F02 /* LogInViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewPresenter.swift; sourceTree = "<group>"; };
 		3BD8584A2B78FB8B00759F02 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		3BD8584B2B78FB8B00759F02 /* LogInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewModel.swift; sourceTree = "<group>"; };
+		3BD8586C2B7A3CDE00759F02 /* UserStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 		3B282B102B77B5F40012CE8F /* DevMuscles */ = {
 			isa = PBXGroup;
 			children = (
+				3BD8586B2B7A3CD100759F02 /* Services */,
 				3B7390FA2B77D0A200C5EF9D /* Modules */,
 				3B7390EC2B77CB2100C5EF9D /* NavigationLayer */,
 				3B282B262B77B6E40012CE8F /* Application */,
@@ -246,6 +249,14 @@
 			path = SceneFactory;
 			sourceTree = "<group>";
 		};
+		3BD8586B2B7A3CD100759F02 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3BD8586C2B7A3CDE00759F02 /* UserStorage.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -350,6 +361,7 @@
 				3B282B412B77C0B70012CE8F /* UIFont+Extention.swift in Sources */,
 				3BD8584E2B78FB8B00759F02 /* LogInViewController.swift in Sources */,
 				3B282B142B77B5F40012CE8F /* SceneDelegate.swift in Sources */,
+				3BD8586D2B7A3CDE00759F02 /* UserStorage.swift in Sources */,
 				3B7390FF2B77D0DE00C5EF9D /* OnboardingViewController.swift in Sources */,
 				3B7390F32B77CB4E00C5EF9D /* Coordinator.swift in Sources */,
 				3BD8584F2B78FB8B00759F02 /* LogInViewModel.swift in Sources */,

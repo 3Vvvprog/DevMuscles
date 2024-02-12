@@ -11,9 +11,14 @@ import UIKit
 class AppCoordinator: Coordinator {
     
     private let factory = SceneFactory.self
+    private let userStorage = UserStorage.shared
     
     override func start() {
-        showOnboardingFlow()
+        if userStorage.passedOnboarding {
+            showLoginFlow()
+        }else {
+            showOnboardingFlow()
+        }
     }
     
     override func finish() {
